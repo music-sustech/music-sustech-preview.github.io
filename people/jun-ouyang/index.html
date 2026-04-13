@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Jun Ouyang — Undergraduate Student at MUSIC Lab"><title>Jun Ouyang — MUSIC Lab</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"><!-- Dark mode: read preference before first paint to prevent flash --><script>
+      (function () {
+        const stored = localStorage.getItem('theme');
+        if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script><link rel="stylesheet" href="/music-sustech-preview.github.io/_astro/Base.CaaUxddm.css"></head> <body> <header class="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm"> <nav class="mx-auto flex max-w-5xl items-baseline justify-between px-4 py-3"> <!-- Wordmark (home link) --> <a href="/music-sustech-preview.github.io/" class="group flex flex-col leading-tight no-underline hover:no-underline"> <span class="text-[36px] font-semibold tracking-tight text-ink">MUSIC Lab @ SUSTech</span> <span class="text-[14px] text-muted">Microsystems for Ubiquitous Sensing, Intelligence, and Communication</span> </a> <!-- Desktop nav — outer <nav> uses items-baseline so these items'
+         baseline aligns with the wordmark's first-line (MUSIC Lab) baseline. --> <ul class="hidden items-center gap-6 lg:flex"> <li class="relative group/nav">  <button class="flex items-center gap-1 text-[18px] font-medium transition-colors hover:text-accent text-ink" aria-expanded="false" aria-haspopup="true"> Education <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M6 9l6 6 6-6"></path> </svg> </button> <ul class="invisible absolute left-0 top-full mt-1 min-w-[200px] rounded-md border border-line bg-paper py-1 opacity-0 shadow-lg transition-all group-hover/nav:visible group-hover/nav:opacity-100"> <li> <a href="/music-sustech-preview.github.io/teaching" class="block px-4 py-2 text-sm transition-colors hover:bg-accent-soft hover:text-accent text-ink"> Teaching </a> </li><li> <a href="/music-sustech-preview.github.io/outreach" class="block px-4 py-2 text-sm transition-colors hover:bg-accent-soft hover:text-accent text-ink"> Outreach </a> </li> </ul>  </li><li class="relative group/nav">  <button class="flex items-center gap-1 text-[18px] font-medium transition-colors hover:text-accent text-ink" aria-expanded="false" aria-haspopup="true"> Research <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M6 9l6 6 6-6"></path> </svg> </button> <ul class="invisible absolute left-0 top-full mt-1 min-w-[200px] rounded-md border border-line bg-paper py-1 opacity-0 shadow-lg transition-all group-hover/nav:visible group-hover/nav:opacity-100"> <li> <a href="/music-sustech-preview.github.io/research" class="block px-4 py-2 text-sm transition-colors hover:bg-accent-soft hover:text-accent text-ink"> Research Directions </a> </li><li> <a href="/music-sustech-preview.github.io/research/publications" class="block px-4 py-2 text-sm transition-colors hover:bg-accent-soft hover:text-accent text-ink"> Publications </a> </li><li> <a href="/music-sustech-preview.github.io/research/facilities" class="block px-4 py-2 text-sm transition-colors hover:bg-accent-soft hover:text-accent text-ink"> Facilities </a> </li> </ul>  </li><li class="relative group/nav"> <a href="/music-sustech-preview.github.io/people" class="text-[18px] font-medium transition-colors hover:text-accent text-accent border-b-2 border-accent pb-0.5"> People </a> </li><li class="relative group/nav">  <button class="flex items-center gap-1 text-[18px] font-medium transition-colors hover:text-accent text-ink" aria-expanded="false" aria-haspopup="true"> Updates <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M6 9l6 6 6-6"></path> </svg> </button> <ul class="invisible absolute left-0 top-full mt-1 min-w-[200px] rounded-md border border-line bg-paper py-1 opacity-0 shadow-lg transition-all group-hover/nav:visible group-hover/nav:opacity-100"> <li> <a href="/music-sustech-preview.github.io/updates/news" class="block px-4 py-2 text-sm transition-colors hover:bg-accent-soft hover:text-accent text-ink"> News </a> </li><li> <a href="/music-sustech-preview.github.io/updates/blog" class="block px-4 py-2 text-sm transition-colors hover:bg-accent-soft hover:text-accent text-ink"> Blog </a> </li> </ul>  </li><li class="relative group/nav"> <a href="/music-sustech-preview.github.io/join" class="text-[18px] font-medium transition-colors hover:text-accent text-ink"> Join Us </a> </li> <li class="relative"> <!-- Trigger button — a small magnifying-glass icon suitable for the nav bar --><button id="search-trigger" type="button" class="inline-flex items-center justify-center rounded-md p-2 text-muted transition-colors hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" aria-label="Open search"> <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <circle cx="11" cy="11" r="8"></circle> <line x1="21" y1="21" x2="16.65" y2="16.65"></line> </svg> </button> <!-- Search modal (hidden by default) --> <div id="search-overlay" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true" aria-label="Site search"> <!-- Backdrop --> <div id="search-backdrop" class="absolute inset-0 bg-ink/50 backdrop-blur-sm"></div> <!-- Modal panel --> <div class="relative mx-auto mt-[10vh] flex max-h-[75vh] w-full max-w-2xl flex-col rounded-lg border border-line bg-paper shadow-2xl sm:mx-4 md:mx-auto"> <!-- Header: input + close --> <div class="flex items-center gap-2 border-b border-line px-4 py-3"> <svg class="h-5 w-5 shrink-0 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <circle cx="11" cy="11" r="8"></circle> <line x1="21" y1="21" x2="16.65" y2="16.65"></line> </svg> <input id="search-input" type="search" placeholder="Search the site..." autocomplete="off" class="flex-1 border-0 bg-transparent text-ink placeholder:text-muted focus:outline-none"> <kbd class="hidden rounded border border-line px-1.5 py-0.5 text-xs text-muted sm:inline-block">Esc</kbd> <button id="search-close" type="button" class="inline-flex items-center justify-center rounded-md p-1 text-muted transition-colors hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" aria-label="Close search"> <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <line x1="18" y1="6" x2="6" y2="18"></line> <line x1="6" y1="6" x2="18" y2="18"></line> </svg> </button> </div> <!-- Results area --> <div id="search-results" class="overflow-y-auto px-4 py-4"> <p id="search-placeholder" class="text-center text-sm text-muted">
+Type to start searching
+</p> </div> </div> </div> <!-- Pagefind CSS overrides — injected once, matches both light and dark themes -->  <script>(function(){const pagefindUrl = "/music-sustech-preview.github.io_pagefind/pagefind.js";
+
+  (function () {
+    /* ------------------------------------------------------------------ */
+    /*  DOM refs                                                          */
+    /* ------------------------------------------------------------------ */
+    const trigger = document.getElementById('search-trigger');
+    const overlay = document.getElementById('search-overlay');
+    const backdrop = document.getElementById('search-backdrop');
+    const input = document.getElementById('search-input');
+    const closeBtn = document.getElementById('search-close');
+    const resultsEl = document.getElementById('search-results');
+    const placeholder = document.getElementById('search-placeholder');
+
+    if (!trigger || !overlay || !backdrop || !input || !closeBtn || !resultsEl) return;
+
+    /* ------------------------------------------------------------------ */
+    /*  State                                                             */
+    /* ------------------------------------------------------------------ */
+    let pagefind = null;       // Pagefind instance, loaded on first open
+    let loading = false;       // True while Pagefind JS is being fetched
+    let debounceTimer = null;
+
+    /* ------------------------------------------------------------------ */
+    /*  Open / close helpers                                              */
+    /* ------------------------------------------------------------------ */
+    function openSearch() {
+      overlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      input.focus();
+      loadPagefind();          // ensure Pagefind is ready
+    }
+
+    function closeSearch() {
+      overlay.classList.add('hidden');
+      document.body.style.overflow = '';
+      input.value = '';
+      if (resultsEl && placeholder) {
+        resultsEl.innerHTML = '';
+        resultsEl.appendChild(placeholder);
+        placeholder.textContent = 'Type to start searching';
+      }
+      trigger.focus();
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*  Load Pagefind on demand                                           */
+    /* ------------------------------------------------------------------ */
+    async function loadPagefind() {
+      if (pagefind || loading) return;
+      loading = true;
+      try {
+        pagefind = await import(pagefindUrl);
+        await pagefind.init();
+      } catch (e) {
+        console.warn('[Search] Could not load Pagefind index:', e);
+        pagefind = null;
+      } finally {
+        loading = false;
+      }
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*  Perform search                                                    */
+    /* ------------------------------------------------------------------ */
+    async function performSearch(query) {
+      if (!query || query.trim().length === 0) {
+        resultsEl.innerHTML = '';
+        resultsEl.appendChild(placeholder);
+        placeholder.textContent = 'Type to start searching';
+        return;
+      }
+
+      if (!pagefind) {
+        resultsEl.innerHTML = '<p class="search-status">Loading search index...</p>';
+        await loadPagefind();
+        if (!pagefind) {
+          resultsEl.innerHTML = '<p class="search-status">Search index unavailable. Try again after a full build.</p>';
+          return;
+        }
+      }
+
+      const search = await pagefind.search(query);
+
+      if (search.results.length === 0) {
+        resultsEl.innerHTML = '<p class="search-status">No results found.</p>';
+        return;
+      }
+
+      // Load the first 8 results (enough for a modal view)
+      const data = await Promise.all(
+        search.results.slice(0, 8).map(r => r.data())
+      );
+
+      resultsEl.innerHTML = data
+        .map(
+          (item) => `
+          <div class="search-result">
+            <a href="${item.url}">
+              <div class="search-result-title">${item.meta?.title || item.url}</div>
+              <div class="search-result-excerpt">${item.excerpt}</div>
+            </a>
+          </div>`
+        )
+        .join('');
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*  Event listeners                                                   */
+    /* ------------------------------------------------------------------ */
+
+    // Open from trigger button
+    trigger.addEventListener('click', openSearch);
+
+    // Close from close button
+    closeBtn.addEventListener('click', closeSearch);
+
+    // Close on backdrop click
+    backdrop.addEventListener('click', closeSearch);
+
+    // Keyboard: Escape to close, Cmd/Ctrl+K to open
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
+        e.preventDefault();
+        closeSearch();
+        return;
+      }
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        if (overlay.classList.contains('hidden')) {
+          openSearch();
+        } else {
+          closeSearch();
+        }
+      }
+    });
+
+    // Live search on input with debounce
+    input.addEventListener('input', function () {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function () {
+        performSearch(input.value);
+      }, 200);
+    });
+
+    // Simple focus trap: keep Tab within the modal while open
+    overlay.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab') return;
+
+      const focusable = overlay.querySelectorAll(
+        'input, button, [href], [tabindex]:not([tabindex="-1"])'
+      );
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    });
+  })();
+})();</script> </li> </ul> <!-- Mobile hamburger button --> <button id="mobile-menu-btn" class="lg:hidden p-2 text-ink" aria-label="Toggle navigation menu" aria-expanded="false"> <svg id="hamburger-icon" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M4 6h16M4 12h16M4 18h16"></path> </svg> <svg id="close-icon" class="hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M18 6L6 18M6 6l12 12"></path> </svg> </button> </nav> <!-- Mobile nav menu --> <div id="mobile-menu" class="hidden border-t border-line lg:hidden"> <ul class="px-4 py-2"> <li class="border-b border-line last:border-b-0"> <div class="mobile-dropdown"> <button class="flex w-full items-center justify-between py-3 text-[16px] font-medium text-ink" aria-expanded="false"> Education <svg class="mobile-chevron h-4 w-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M6 9l6 6 6-6"></path> </svg> </button> <ul class="mobile-submenu hidden pb-2 pl-4"> <li> <a href="/music-sustech-preview.github.io/teaching" class="block py-2 text-sm transition-colors hover:text-accent text-muted"> Teaching </a> </li><li> <a href="/music-sustech-preview.github.io/outreach" class="block py-2 text-sm transition-colors hover:text-accent text-muted"> Outreach </a> </li> </ul> </div> </li><li class="border-b border-line last:border-b-0"> <div class="mobile-dropdown"> <button class="flex w-full items-center justify-between py-3 text-[16px] font-medium text-ink" aria-expanded="false"> Research <svg class="mobile-chevron h-4 w-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M6 9l6 6 6-6"></path> </svg> </button> <ul class="mobile-submenu hidden pb-2 pl-4"> <li> <a href="/music-sustech-preview.github.io/research" class="block py-2 text-sm transition-colors hover:text-accent text-muted"> Research Directions </a> </li><li> <a href="/music-sustech-preview.github.io/research/publications" class="block py-2 text-sm transition-colors hover:text-accent text-muted"> Publications </a> </li><li> <a href="/music-sustech-preview.github.io/research/facilities" class="block py-2 text-sm transition-colors hover:text-accent text-muted"> Facilities </a> </li> </ul> </div> </li><li class="border-b border-line last:border-b-0"> <a href="/music-sustech-preview.github.io/people" class="block py-3 text-[16px] font-medium transition-colors hover:text-accent text-accent"> People </a> </li><li class="border-b border-line last:border-b-0"> <div class="mobile-dropdown"> <button class="flex w-full items-center justify-between py-3 text-[16px] font-medium text-ink" aria-expanded="false"> Updates <svg class="mobile-chevron h-4 w-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M6 9l6 6 6-6"></path> </svg> </button> <ul class="mobile-submenu hidden pb-2 pl-4"> <li> <a href="/music-sustech-preview.github.io/updates/news" class="block py-2 text-sm transition-colors hover:text-accent text-muted"> News </a> </li><li> <a href="/music-sustech-preview.github.io/updates/blog" class="block py-2 text-sm transition-colors hover:text-accent text-muted"> Blog </a> </li> </ul> </div> </li><li class="border-b border-line last:border-b-0"> <a href="/music-sustech-preview.github.io/join" class="block py-3 text-[16px] font-medium transition-colors hover:text-accent text-ink"> Join Us </a> </li> </ul> </div> </header> <script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  if (menuBtn && mobileMenu && hamburgerIcon && closeIcon) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden', !isOpen);
+      closeIcon.classList.toggle('hidden', isOpen);
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  }
+
+  // Mobile accordion dropdowns
+  document.querySelectorAll('.mobile-dropdown button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const submenu = btn.nextElementSibling;
+      const chevron = btn.querySelector('.mobile-chevron');
+      if (submenu && chevron) {
+        const isHidden = submenu.classList.toggle('hidden');
+        chevron.style.transform = isHidden ? '' : 'rotate(180deg)';
+        btn.setAttribute('aria-expanded', String(!isHidden));
+      }
+    });
+  });
+</script> <main class="mx-auto max-w-5xl px-4 py-8">   <nav class="mb-6"> <a href="/music-sustech-preview.github.io/people" class="text-sm text-accent hover:underline">&larr; All people</a> </nav> <div class="flex flex-col gap-8 sm:flex-row"> <!-- Photo -->  <!-- Info --> <div class="flex-1"> <h1 class="mb-1 text-2xl font-semibold text-ink">Jun Ouyang</h1> <p class="mb-1 text-base text-muted">Undergraduate Student</p> <div class="mb-4 flex flex-wrap items-center gap-2"> <span class="rounded bg-accent-soft px-2 py-0.5 text-xs font-medium text-accent">Alumni</span> <span class="text-sm text-muted">
+Joined 2015 · Left 2016 </span> </div> <!-- Current position (alumni) --> <p class="mb-4 text-sm text-muted"> <span class="font-medium text-ink">Current position:</span> partly supported by a National Science Foundation Research Experience for Undergraduates (REU) Grant </p> <!-- Bio -->  <!-- Contact links --> <div class="flex flex-wrap gap-3">     </div> </div> </div>   </main> <footer class="border-t border-line bg-paper"> <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-6"> <p class="text-sm text-muted">
+&copy; 2026 MUSIC Lab, Southern University of Science and Technology
+</p> <button id="theme-toggle" class="rounded-md p-2 text-muted transition-colors hover:bg-accent-soft hover:text-accent" aria-label="Toggle dark mode"> <!-- Sun icon (shown in dark mode) --> <svg id="sun-icon" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="12" cy="12" r="5"></circle> <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path> </svg> <!-- Moon icon (shown in light mode) --> <svg id="moon-icon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> </div> </footer> <script>
+  (function () {
+    const toggle = document.getElementById('theme-toggle');
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    function updateIcons() {
+      const isDark = document.documentElement.classList.contains('dark');
+      if (sunIcon && moonIcon) {
+        sunIcon.classList.toggle('hidden', !isDark);
+        moonIcon.classList.toggle('hidden', isDark);
+      }
+    }
+
+    updateIcons();
+
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        updateIcons();
+      });
+    }
+  })();
+</script> </body></html>
